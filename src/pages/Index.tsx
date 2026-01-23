@@ -343,8 +343,35 @@ const Index = () => {
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {/* Project 1 - WebDevPro */}
+            {/* Project 1 - TechVerse */}
             <div className="project-card group animate-fade-in" style={{ animationDelay: '0.1s' }}>
+              <div className="relative overflow-hidden">
+                <div className="aspect-video bg-muted flex items-center justify-center">
+                  <img src="https://images.unsplash.com/photo-1468495244123-6c6c332eeece?w=800&auto=format&fit=crop" alt="TechVerse – Tech Gadgets Ecom Website" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+                </div>
+                
+                <div className="p-6">
+                  <h3 className="text-xl font-bold mb-2">TechVerse – Tech Gadgets Ecom Website</h3>
+                  <p className="text-muted-foreground mb-4">
+                    Built a responsive React app with reusable components, state management, and JSON server integration for optimized performance and user experience.
+                  </p>
+                  
+                  <div className="flex flex-wrap gap-2 mb-4">
+                    <span className="text-xs bg-primary/10 text-primary px-2 py-1 rounded">React</span>
+                    <span className="text-xs bg-primary/10 text-primary px-2 py-1 rounded">State Management</span>
+                    <span className="text-xs bg-primary/10 text-primary px-2 py-1 rounded">JSON Server</span>
+                    <span className="text-xs bg-primary/10 text-primary px-2 py-1 rounded">Responsive Design</span>
+                  </div>
+                  
+                  <a href="https://tech-verse-frontend.vercel.app/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-primary hover:underline">
+                    View Project →
+                  </a>
+                </div>
+              </div>
+            </div>
+            
+            {/* Project 2 - WebDevPro */}
+            <div className="project-card group animate-fade-in" style={{ animationDelay: '0.2s' }}>
               <div className="relative overflow-hidden">
                 <div className="aspect-video bg-muted flex items-center justify-center">
                   <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&auto=format&fit=crop" alt="WebDevPro – Web Service Agency Website" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
@@ -371,8 +398,8 @@ const Index = () => {
               </div>
             </div>
             
-            {/* Project 2 - CloudWay */}
-            <div className="project-card group animate-fade-in" style={{ animationDelay: '0.2s' }}>
+            {/* Project 3 - CloudWay */}
+            <div className="project-card group animate-fade-in" style={{ animationDelay: '0.3s' }}>
               <div className="relative overflow-hidden">
                 <div className="aspect-video bg-muted flex items-center justify-center">
                   <img src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=800&auto=format&fit=crop" alt="CloudWay – Trip Package Booking Website" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
@@ -399,8 +426,8 @@ const Index = () => {
               </div>
             </div>
             
-            {/* Project 3 - BZone */}
-            <div className="project-card group animate-fade-in" style={{ animationDelay: '0.3s' }}>
+            {/* Project 4 - BZone */}
+            <div className="project-card group animate-fade-in" style={{ animationDelay: '0.4s' }}>
               <div className="relative overflow-hidden">
                 <div className="aspect-video bg-muted flex items-center justify-center">
                   <img src="https://miro.medium.com/v2/resize:fit:2000/1*2PsY9nv-WYINzwtXB15Pow.png" alt="BZone – College Event Management System" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
@@ -423,8 +450,8 @@ const Index = () => {
               </div>
             </div>
             
-            {/* Project 4 - OPCW */}
-            <div className="project-card group animate-fade-in" style={{ animationDelay: '0.4s' }}>
+            {/* Project 5 - OPCW */}
+            <div className="project-card group animate-fade-in" style={{ animationDelay: '0.5s' }}>
               <div className="relative overflow-hidden">
                 <div className="aspect-video bg-muted flex items-center justify-center">
                   <img src="https://img.freepik.com/free-psd/gradient-sales-template-design_23-2151082125.jpg" alt="OPCW – Online Phone Case Customization Website" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
@@ -443,33 +470,6 @@ const Index = () => {
                     <span className="text-xs bg-primary/10 text-primary px-2 py-1 rounded">CSS3</span>
                     <span className="text-xs bg-primary/10 text-primary px-2 py-1 rounded">Responsive Design</span>
                   </div>
-                </div>
-              </div>
-            </div>
-            
-            {/* Project 5 - TechVerse */}
-            <div className="project-card group animate-fade-in" style={{ animationDelay: '0.5s' }}>
-              <div className="relative overflow-hidden">
-                <div className="aspect-video bg-muted flex items-center justify-center">
-                  <img src="https://images.unsplash.com/photo-1468495244123-6c6c332eeece?w=800&auto=format&fit=crop" alt="TechVerse – Tech Gadgets Ecom Website" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
-                </div>
-                
-                <div className="p-6">
-                  <h3 className="text-xl font-bold mb-2">TechVerse – Tech Gadgets Ecom Website</h3>
-                  <p className="text-muted-foreground mb-4">
-                    Built a responsive React app with reusable components, state management, and JSON server integration for optimized performance and user experience.
-                  </p>
-                  
-                  <div className="flex flex-wrap gap-2 mb-4">
-                    <span className="text-xs bg-primary/10 text-primary px-2 py-1 rounded">React</span>
-                    <span className="text-xs bg-primary/10 text-primary px-2 py-1 rounded">State Management</span>
-                    <span className="text-xs bg-primary/10 text-primary px-2 py-1 rounded">JSON Server</span>
-                    <span className="text-xs bg-primary/10 text-primary px-2 py-1 rounded">Responsive Design</span>
-                  </div>
-                  
-                  <a href="https://tech-verse-frontend.vercel.app/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-primary hover:underline">
-                    View Project →
-                  </a>
                 </div>
               </div>
             </div>
