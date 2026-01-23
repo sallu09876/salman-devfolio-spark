@@ -172,6 +172,31 @@ const Index = () => {
                 
                 <Card className="p-6 border border-white/5 bg-card/80 backdrop-blur-sm">
                   <div className="flex items-center gap-3 mb-4 text-primary">
+                    <Database size={24} />
+                    <h4 className="font-semibold text-lg">Backend & Database</h4>
+                  </div>
+                  <ul className="space-y-2 text-muted-foreground">
+                    <li className="flex items-center gap-2">
+                      <span className="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                      Node.js
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <span className="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                      Express.js
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <span className="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                      MongoDB
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <span className="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                      RESTful APIs
+                    </li>
+                  </ul>
+                </Card>
+                
+                <Card className="p-6 border border-white/5 bg-card/80 backdrop-blur-sm">
+                  <div className="flex items-center gap-3 mb-4 text-primary">
                     <MonitorSmartphone size={24} />
                     <h4 className="font-semibold text-lg">Web Design</h4>
                   </div>
@@ -208,12 +233,12 @@ const Index = () => {
                   </ul>
                 </Card>
                 
-                <Card className="p-6 border border-white/5 bg-card/80 backdrop-blur-sm">
+                <Card className="p-6 border border-white/5 bg-card/80 backdrop-blur-sm sm:col-span-2">
                   <div className="flex items-center gap-3 mb-4 text-primary">
                     <Briefcase size={24} />
                     <h4 className="font-semibold text-lg">Soft Skills</h4>
                   </div>
-                  <ul className="space-y-2 text-muted-foreground">
+                  <ul className="grid grid-cols-2 gap-2 text-muted-foreground">
                     <li className="flex items-center gap-2">
                       <span className="w-1.5 h-1.5 rounded-full bg-primary"></span>
                       Communication
@@ -418,6 +443,33 @@ const Index = () => {
                     <span className="text-xs bg-primary/10 text-primary px-2 py-1 rounded">CSS3</span>
                     <span className="text-xs bg-primary/10 text-primary px-2 py-1 rounded">Responsive Design</span>
                   </div>
+                </div>
+              </div>
+            </div>
+            
+            {/* Project 5 - TechVerse */}
+            <div className="project-card group animate-fade-in" style={{ animationDelay: '0.5s' }}>
+              <div className="relative overflow-hidden">
+                <div className="aspect-video bg-muted flex items-center justify-center">
+                  <img src="https://images.unsplash.com/photo-1468495244123-6c6c332eeece?w=800&auto=format&fit=crop" alt="TechVerse – Tech Gadgets Ecom Website" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+                </div>
+                
+                <div className="p-6">
+                  <h3 className="text-xl font-bold mb-2">TechVerse – Tech Gadgets Ecom Website</h3>
+                  <p className="text-muted-foreground mb-4">
+                    Built a responsive React app with reusable components, state management, and JSON server integration for optimized performance and user experience.
+                  </p>
+                  
+                  <div className="flex flex-wrap gap-2 mb-4">
+                    <span className="text-xs bg-primary/10 text-primary px-2 py-1 rounded">React</span>
+                    <span className="text-xs bg-primary/10 text-primary px-2 py-1 rounded">State Management</span>
+                    <span className="text-xs bg-primary/10 text-primary px-2 py-1 rounded">JSON Server</span>
+                    <span className="text-xs bg-primary/10 text-primary px-2 py-1 rounded">Responsive Design</span>
+                  </div>
+                  
+                  <a href="https://tech-verse-frontend.vercel.app/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-primary hover:underline">
+                    View Project →
+                  </a>
                 </div>
               </div>
             </div>
