@@ -5,7 +5,7 @@ import Footer from '@/components/Footer';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 import { useToast } from "@/hooks/use-toast";
-import { Briefcase, Code, Database, Download, Github, Linkedin, Mail, Phone, ShoppingCart, FileCode, MonitorSmartphone, ArrowUp } from 'lucide-react';
+import { Briefcase, Code, Database, Download, Github, Linkedin, Mail, Phone, ShoppingCart, FileCode, MonitorSmartphone, ArrowUp, Server, Wrench } from 'lucide-react';
 import profilePhoto from '@/assets/profile-photo.jpg';
 
 const Index = () => {
@@ -54,20 +54,18 @@ const Index = () => {
               <div className="space-y-3">
                 <div className="inline-flex items-center gap-2 bg-primary/10 px-4 py-2 rounded-full text-primary text-sm font-medium mb-4">
                   <span className="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
-                  MERN Stack Intern at Techolas Technologies
+                  Software Engineer Intern at Sinnonteq
                 </div>
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
                   Hello, I'm <span className="text-primary">Salman Rasheed</span>
                 </h1>
                 <h2 className="text-xl md:text-2xl font-medium text-muted-foreground">
-                  MERN Stack Developer | Currently interning at Techolas Technologies
+                  Full Stack Developer (MERN) | Software Engineer Intern at Sinnonteq
                 </h2>
               </div>
 
               <p className="text-lg text-muted-foreground max-w-lg">
-                BCA graduate currently pursuing a MERN Stack internship at Techolas Technologies. 
-                Passionate about creating responsive, user-friendly web applications with modern technologies. 
-                Let's build something amazing together.
+                Full Stack Developer specializing in the MERN stack with hands-on experience building scalable web applications, REST APIs, and responsive user interfaces. Currently working as a Software Engineer Intern at Sinnonteq, contributing to production-level systems and real-world software solutions.
               </p>
               
               <div className="flex flex-wrap gap-4 pt-4">
@@ -119,18 +117,16 @@ const Index = () => {
             <div className="w-full md:w-1/2">
               <h3 className="text-2xl font-bold mb-4">Who am I?</h3>
               <p className="text-muted-foreground mb-6">
-                Enthusiastic and detail-oriented MERN Stack Developer currently pursuing full-stack development with hands-on 
-                experience in MongoDB, Express.js, React.js, and Node.js. Successfully completed the Frontend Development phase, 
-                mastering HTML, CSS, JavaScript (ES6+), React.js, and responsive web design.
+                I am a Full Stack Developer specializing in the MERN stack (MongoDB, Express.js, React.js, Node.js) with hands-on experience building modern web applications from frontend interfaces to backend services.
               </p>
               <p className="text-muted-foreground mb-6">
-                Passionate about building scalable, user-focused web applications and continuously improving technical and 
-                problem-solving skills through real-world projects and internships. Currently gaining hands-on experience at 
-                Techolas Technologies, where I'm working on real client projects using modern front-end practices.
+                Currently working as a Software Engineer Intern at Sinnonteq, where I contribute to backend services, system architecture, and documentation including BRD analysis and SRS preparation.
+              </p>
+              <p className="text-muted-foreground mb-6">
+                Previously completed a MERN Stack internship at Techolas Technologies where I developed responsive React interfaces, integrated REST APIs, and worked with MongoDB databases.
               </p>
               <p className="text-muted-foreground">
-                With a strong foundation in responsive design, clean code practices, and modern web technologies, I'm committed 
-                to creating impactful digital solutions that enhance user experience and solve real-world challenges.
+                I enjoy building scalable, clean, and user-focused applications that solve real-world problems.
               </p>
               
               <div className="mt-8">
@@ -148,24 +144,49 @@ const Index = () => {
                 <Card className="p-6 border border-white/5 bg-card/80 backdrop-blur-sm">
                   <div className="flex items-center gap-3 mb-4 text-primary">
                     <Code size={24} />
-                    <h4 className="font-semibold text-lg">Frontend Development</h4>
+                    <h4 className="font-semibold text-lg">Frontend</h4>
                   </div>
                   <ul className="space-y-2 text-muted-foreground">
                     <li className="flex items-center gap-2">
                       <span className="w-1.5 h-1.5 rounded-full bg-primary"></span>
-                      HTML5, CSS3
+                      HTML, CSS, JavaScript
                     </li>
                     <li className="flex items-center gap-2">
                       <span className="w-1.5 h-1.5 rounded-full bg-primary"></span>
-                      JavaScript (ES6+)
+                      React.js, Redux
                     </li>
                     <li className="flex items-center gap-2">
                       <span className="w-1.5 h-1.5 rounded-full bg-primary"></span>
-                      React.js
+                      Bootstrap, Tailwind CSS
                     </li>
                     <li className="flex items-center gap-2">
                       <span className="w-1.5 h-1.5 rounded-full bg-primary"></span>
-                      Bootstrap
+                      Mobile-First Design
+                    </li>
+                  </ul>
+                </Card>
+                
+                <Card className="p-6 border border-white/5 bg-card/80 backdrop-blur-sm">
+                  <div className="flex items-center gap-3 mb-4 text-primary">
+                    <Server size={24} />
+                    <h4 className="font-semibold text-lg">Backend</h4>
+                  </div>
+                  <ul className="space-y-2 text-muted-foreground">
+                    <li className="flex items-center gap-2">
+                      <span className="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                      Node.js, Express.js
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <span className="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                      REST APIs, JWT Auth
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <span className="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                      Role-Based Authorization
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <span className="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                      Security Headers
                     </li>
                   </ul>
                 </Card>
@@ -173,87 +194,49 @@ const Index = () => {
                 <Card className="p-6 border border-white/5 bg-card/80 backdrop-blur-sm">
                   <div className="flex items-center gap-3 mb-4 text-primary">
                     <Database size={24} />
-                    <h4 className="font-semibold text-lg">Backend & Database</h4>
+                    <h4 className="font-semibold text-lg">Databases</h4>
                   </div>
                   <ul className="space-y-2 text-muted-foreground">
                     <li className="flex items-center gap-2">
                       <span className="w-1.5 h-1.5 rounded-full bg-primary"></span>
-                      Node.js
+                      MongoDB, Mongoose ODM
                     </li>
                     <li className="flex items-center gap-2">
                       <span className="w-1.5 h-1.5 rounded-full bg-primary"></span>
-                      Express.js
+                      MySQL
                     </li>
                     <li className="flex items-center gap-2">
                       <span className="w-1.5 h-1.5 rounded-full bg-primary"></span>
-                      MongoDB
+                      Schema Design & Indexing
                     </li>
                     <li className="flex items-center gap-2">
                       <span className="w-1.5 h-1.5 rounded-full bg-primary"></span>
-                      RESTful APIs
+                      Database Transactions
                     </li>
                   </ul>
                 </Card>
                 
                 <Card className="p-6 border border-white/5 bg-card/80 backdrop-blur-sm">
                   <div className="flex items-center gap-3 mb-4 text-primary">
-                    <MonitorSmartphone size={24} />
-                    <h4 className="font-semibold text-lg">Web Design</h4>
+                    <Wrench size={24} />
+                    <h4 className="font-semibold text-lg">Tools & Concepts</h4>
                   </div>
                   <ul className="space-y-2 text-muted-foreground">
                     <li className="flex items-center gap-2">
                       <span className="w-1.5 h-1.5 rounded-full bg-primary"></span>
-                      Responsive Layouts
+                      Git, GitHub, VS Code
                     </li>
                     <li className="flex items-center gap-2">
                       <span className="w-1.5 h-1.5 rounded-full bg-primary"></span>
-                      Mobile-First Design
+                      Docker, Docker Compose
                     </li>
                     <li className="flex items-center gap-2">
                       <span className="w-1.5 h-1.5 rounded-full bg-primary"></span>
-                      Cross-Browser Compatibility
-                    </li>
-                  </ul>
-                </Card>
-                
-                <Card className="p-6 border border-white/5 bg-card/80 backdrop-blur-sm">
-                  <div className="flex items-center gap-3 mb-4 text-primary">
-                    <FileCode size={24} />
-                    <h4 className="font-semibold text-lg">Version Control</h4>
-                  </div>
-                  <ul className="space-y-2 text-muted-foreground">
-                    <li className="flex items-center gap-2">
-                      <span className="w-1.5 h-1.5 rounded-full bg-primary"></span>
-                      Git
+                      MVC Architecture
                     </li>
                     <li className="flex items-center gap-2">
                       <span className="w-1.5 h-1.5 rounded-full bg-primary"></span>
-                      GitHub
-                    </li>
-                  </ul>
-                </Card>
-                
-                <Card className="p-6 border border-white/5 bg-card/80 backdrop-blur-sm sm:col-span-2">
-                  <div className="flex items-center gap-3 mb-4 text-primary">
-                    <Briefcase size={24} />
-                    <h4 className="font-semibold text-lg">Soft Skills</h4>
-                  </div>
-                  <ul className="grid grid-cols-2 gap-2 text-muted-foreground">
-                    <li className="flex items-center gap-2">
-                      <span className="w-1.5 h-1.5 rounded-full bg-primary"></span>
-                      Communication
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <span className="w-1.5 h-1.5 rounded-full bg-primary"></span>
-                      Teamwork
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <span className="w-1.5 h-1.5 rounded-full bg-primary"></span>
-                      Adaptability
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <span className="w-1.5 h-1.5 rounded-full bg-primary"></span>
-                      Problem-Solving
+                      HTTP-only Cookies
                     </li>
                   </ul>
                 </Card>
@@ -271,13 +254,69 @@ const Index = () => {
               Experience
             </div>
             <h2 className="section-title">Professional Journey</h2>
-            <p className="section-subtitle">My current internship and learning experience</p>
+            <p className="section-subtitle">My work experience and contributions</p>
           </div>
           
           <div className="max-w-3xl mx-auto">
             <div className="relative">
               <div className="absolute left-6 top-8 bottom-0 w-0.5 bg-primary/20"></div>
               
+              {/* Experience 1 - Sinnonteq */}
+              <div className="relative flex gap-6 mb-8">
+                <div className="flex-shrink-0 w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center border-2 border-primary/20">
+                  <Briefcase className="text-primary" size={20} />
+                </div>
+                
+                <div className="flex-1">
+                  <Card className="p-6 border border-white/5 bg-card/80 backdrop-blur-sm">
+                    <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-3">
+                      <h3 className="text-xl font-bold text-foreground">Software Engineer Intern</h3>
+                      <span className="text-sm text-primary font-medium">Feb 2026 – Present</span>
+                    </div>
+                    <h4 className="text-lg font-semibold text-primary mb-3">
+                      <a href="https://sinnonteq.com/" target="_blank" rel="noopener noreferrer" className="hover:underline">Sinnonteq</a> — Calicut
+                    </h4>
+                    <p className="text-muted-foreground mb-4">
+                      Contributing to a Customer Engagement Platform, working on backend services and scalable architecture with cross-functional teams.
+                    </p>
+                    
+                    <div className="space-y-2 mb-4">
+                      <h5 className="font-semibold text-foreground">Key Responsibilities:</h5>
+                      <ul className="space-y-1 text-muted-foreground">
+                        <li className="flex items-center gap-2">
+                          <span className="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                          Working on a Customer Engagement Platform
+                        </li>
+                        <li className="flex items-center gap-2">
+                          <span className="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                          Contributing to backend services and scalable architecture
+                        </li>
+                        <li className="flex items-center gap-2">
+                          <span className="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                          Writing BRD analysis and SRS documentation
+                        </li>
+                        <li className="flex items-center gap-2">
+                          <span className="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                          Designing MongoDB schemas and backend logic
+                        </li>
+                        <li className="flex items-center gap-2">
+                          <span className="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                          Collaborating with cross-functional development teams
+                        </li>
+                      </ul>
+                    </div>
+                    
+                    <div className="flex flex-wrap gap-2">
+                      <span className="text-xs bg-primary/10 text-primary px-2 py-1 rounded">Node.js</span>
+                      <span className="text-xs bg-primary/10 text-primary px-2 py-1 rounded">Express.js</span>
+                      <span className="text-xs bg-primary/10 text-primary px-2 py-1 rounded">MongoDB</span>
+                      <span className="text-xs bg-primary/10 text-primary px-2 py-1 rounded">REST APIs</span>
+                    </div>
+                  </Card>
+                </div>
+              </div>
+
+              {/* Experience 2 - Techolas */}
               <div className="relative flex gap-6 mb-8">
                 <div className="flex-shrink-0 w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center border-2 border-primary/20">
                   <Briefcase className="text-primary" size={20} />
@@ -287,12 +326,13 @@ const Index = () => {
                   <Card className="p-6 border border-white/5 bg-card/80 backdrop-blur-sm">
                     <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-3">
                       <h3 className="text-xl font-bold text-foreground">MERN Stack Intern</h3>
-                      <span className="text-sm text-primary font-medium">June 2025 - Present</span>
+                      <span className="text-sm text-primary font-medium">Jun 2025 – Feb 2026</span>
                     </div>
-                    <h4 className="text-lg font-semibold text-primary mb-3">Techolas Technologies - Calicut</h4>
+                    <h4 className="text-lg font-semibold text-primary mb-3">
+                      <a href="https://techolas.com/" target="_blank" rel="noopener noreferrer" className="hover:underline">Techolas Technologies</a> — Calicut
+                    </h4>
                     <p className="text-muted-foreground mb-4">
-                      Developing and maintaining front-end components using HTML, CSS, JavaScript, and React. 
-                      Building responsive and user-friendly interfaces with clean, optimized code.
+                      Developed responsive React.js interfaces, integrated REST APIs, and implemented MongoDB CRUD operations in real client projects.
                     </p>
                     
                     <div className="space-y-2 mb-4">
@@ -300,28 +340,28 @@ const Index = () => {
                       <ul className="space-y-1 text-muted-foreground">
                         <li className="flex items-center gap-2">
                           <span className="w-1.5 h-1.5 rounded-full bg-primary"></span>
-                          Developed and maintained front-end components using HTML, CSS, JS, and React
+                          Developed responsive React.js user interfaces
                         </li>
                         <li className="flex items-center gap-2">
                           <span className="w-1.5 h-1.5 rounded-full bg-primary"></span>
-                          Built responsive and user-friendly interfaces with clean, optimized code
+                          Integrated REST APIs using Node.js and Express.js
                         </li>
                         <li className="flex items-center gap-2">
                           <span className="w-1.5 h-1.5 rounded-full bg-primary"></span>
-                          Worked closely with designers to translate UI/UX concepts into functional interfaces
+                          Implemented MongoDB CRUD operations
                         </li>
                         <li className="flex items-center gap-2">
                           <span className="w-1.5 h-1.5 rounded-full bg-primary"></span>
-                          Gained hands-on experience in real client projects using modern front-end practices
+                          Practiced debugging, version control, and development workflows
                         </li>
                       </ul>
                     </div>
                     
                     <div className="flex flex-wrap gap-2">
-                      <span className="text-xs bg-primary/10 text-primary px-2 py-1 rounded">HTML5</span>
-                      <span className="text-xs bg-primary/10 text-primary px-2 py-1 rounded">CSS3</span>
-                      <span className="text-xs bg-primary/10 text-primary px-2 py-1 rounded">JavaScript</span>
                       <span className="text-xs bg-primary/10 text-primary px-2 py-1 rounded">React.js</span>
+                      <span className="text-xs bg-primary/10 text-primary px-2 py-1 rounded">Node.js</span>
+                      <span className="text-xs bg-primary/10 text-primary px-2 py-1 rounded">Express.js</span>
+                      <span className="text-xs bg-primary/10 text-primary px-2 py-1 rounded">MongoDB</span>
                     </div>
                   </Card>
                 </div>
@@ -343,17 +383,49 @@ const Index = () => {
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {/* Project 1 - TechVerse */}
-            <div className="project-card group animate-fade-in" style={{ animationDelay: '0.1s' }}>
+            {/* Project 1 - MedFlow (Featured) */}
+            <div className="project-card group animate-fade-in md:col-span-2" style={{ animationDelay: '0.1s' }}>
+              <div className="relative overflow-hidden">
+                <div className="aspect-video bg-muted flex items-center justify-center">
+                  <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&auto=format&fit=crop" alt="MedFlow – Hospital Appointment & EMR Management System" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+                </div>
+                
+                <div className="p-6">
+                  <div className="inline-flex items-center gap-2 bg-primary/10 px-3 py-1 rounded-full text-primary text-xs font-medium mb-3">
+                    ⭐ Featured Project
+                  </div>
+                  <h3 className="text-xl font-bold mb-2">MedFlow – Hospital Appointment & EMR Management System</h3>
+                  <p className="text-muted-foreground mb-4">
+                    A full-stack MERN application featuring doctor and receptionist management, dynamic appointment slot booking, Electronic Medical Records (EMR), secure JWT authentication, role-based access control, and backend APIs with MongoDB schema design.
+                  </p>
+                  
+                  <div className="flex flex-wrap gap-2 mb-4">
+                    <span className="text-xs bg-primary/10 text-primary px-2 py-1 rounded">MongoDB</span>
+                    <span className="text-xs bg-primary/10 text-primary px-2 py-1 rounded">Express.js</span>
+                    <span className="text-xs bg-primary/10 text-primary px-2 py-1 rounded">React.js</span>
+                    <span className="text-xs bg-primary/10 text-primary px-2 py-1 rounded">Node.js</span>
+                    <span className="text-xs bg-primary/10 text-primary px-2 py-1 rounded">JWT Auth</span>
+                    <span className="text-xs bg-primary/10 text-primary px-2 py-1 rounded">RBAC</span>
+                  </div>
+                  
+                  <a href="https://mern-emr-app.vercel.app" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-primary hover:underline">
+                    View Project →
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            {/* Project 2 - TechVerse */}
+            <div className="project-card group animate-fade-in" style={{ animationDelay: '0.2s' }}>
               <div className="relative overflow-hidden">
                 <div className="aspect-video bg-muted flex items-center justify-center">
                   <img src="https://images.unsplash.com/photo-1468495244123-6c6c332eeece?w=800&auto=format&fit=crop" alt="TechVerse – Tech Gadgets Ecom Website" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
                 </div>
                 
                 <div className="p-6">
-                  <h3 className="text-xl font-bold mb-2">TechVerse – Tech Gadgets Ecom Website</h3>
+                  <h3 className="text-xl font-bold mb-2">TechVerse – Tech Gadgets Ecommerce Website</h3>
                   <p className="text-muted-foreground mb-4">
-                    Built a responsive React app with reusable components, state management, and JSON server integration for optimized performance and user experience.
+                    Built a responsive React application with reusable components, state management, and JSON Server integration to simulate an e-commerce product system.
                   </p>
                   
                   <div className="flex flex-wrap gap-2 mb-4">
@@ -370,8 +442,8 @@ const Index = () => {
               </div>
             </div>
             
-            {/* Project 2 - WebDevPro */}
-            <div className="project-card group animate-fade-in" style={{ animationDelay: '0.2s' }}>
+            {/* Project 3 - WebDevPro */}
+            <div className="project-card group animate-fade-in" style={{ animationDelay: '0.3s' }}>
               <div className="relative overflow-hidden">
                 <div className="aspect-video bg-muted flex items-center justify-center">
                   <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&auto=format&fit=crop" alt="WebDevPro – Web Service Agency Website" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
@@ -380,8 +452,7 @@ const Index = () => {
                 <div className="p-6">
                   <h3 className="text-xl font-bold mb-2">WebDevPro – Web Service Agency Website</h3>
                   <p className="text-muted-foreground mb-4">
-                    Built a fully responsive React-based web service website with clean, modern UI components. 
-                    Implemented reusable components, state management, and API integrations to enhance user experience.
+                    Developed a modern React website using reusable components, API integrations, and responsive layouts to showcase digital services.
                   </p>
                   
                   <div className="flex flex-wrap gap-2 mb-4">
@@ -398,8 +469,8 @@ const Index = () => {
               </div>
             </div>
             
-            {/* Project 3 - CloudWay */}
-            <div className="project-card group animate-fade-in" style={{ animationDelay: '0.3s' }}>
+            {/* Project 4 - CloudWay */}
+            <div className="project-card group animate-fade-in" style={{ animationDelay: '0.4s' }}>
               <div className="relative overflow-hidden">
                 <div className="aspect-video bg-muted flex items-center justify-center">
                   <img src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=800&auto=format&fit=crop" alt="CloudWay – Trip Package Booking Website" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
@@ -408,8 +479,7 @@ const Index = () => {
                 <div className="p-6">
                   <h3 className="text-xl font-bold mb-2">CloudWay – Trip Package Booking Website</h3>
                   <p className="text-muted-foreground mb-4">
-                    Developed a responsive travel booking platform using HTML, CSS, and JavaScript. 
-                    Added smooth navigation, mobile-friendly layouts, and interactive UI features for booking trip packages.
+                    Created a responsive travel booking website using HTML, CSS, and JavaScript with smooth navigation and cross-device compatibility.
                   </p>
                   
                   <div className="flex flex-wrap gap-2 mb-4">
@@ -422,54 +492,6 @@ const Index = () => {
                   <a href="https://sallu09876.github.io/PROJECT-TRIP/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-primary hover:underline">
                     View Project →
                   </a>
-                </div>
-              </div>
-            </div>
-            
-            {/* Project 4 - BZone */}
-            <div className="project-card group animate-fade-in" style={{ animationDelay: '0.4s' }}>
-              <div className="relative overflow-hidden">
-                <div className="aspect-video bg-muted flex items-center justify-center">
-                  <img src="https://miro.medium.com/v2/resize:fit:2000/1*2PsY9nv-WYINzwtXB15Pow.png" alt="BZone – College Event Management System" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
-                </div>
-                
-                <div className="p-6">
-                  <h3 className="text-xl font-bold mb-2">BZone – College Event Management System</h3>
-                  <p className="text-muted-foreground mb-4">
-                    Designed responsive front-end UI for event registration to simplify manual processes. 
-                    Built role-based login interfaces with HTML, CSS, and JavaScript.
-                  </p>
-                  
-                  <div className="flex flex-wrap gap-2 mb-4">
-                    <span className="text-xs bg-primary/10 text-primary px-2 py-1 rounded">HTML5</span>
-                    <span className="text-xs bg-primary/10 text-primary px-2 py-1 rounded">CSS3</span>
-                    <span className="text-xs bg-primary/10 text-primary px-2 py-1 rounded">JavaScript</span>
-                    <span className="text-xs bg-primary/10 text-primary px-2 py-1 rounded">UI/UX Design</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            {/* Project 5 - OPCW */}
-            <div className="project-card group animate-fade-in" style={{ animationDelay: '0.5s' }}>
-              <div className="relative overflow-hidden">
-                <div className="aspect-video bg-muted flex items-center justify-center">
-                  <img src="https://img.freepik.com/free-psd/gradient-sales-template-design_23-2151082125.jpg" alt="OPCW – Online Phone Case Customization Website" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
-                </div>
-                
-                <div className="p-6">
-                  <h3 className="text-xl font-bold mb-2">OPCW – Phone Case Customization Website</h3>
-                  <p className="text-muted-foreground mb-4">
-                    Created an interactive product preview feature using JavaScript. 
-                    Ensured mobile responsiveness and improved user experience across browsers.
-                  </p>
-                  
-                  <div className="flex flex-wrap gap-2 mb-4">
-                    <span className="text-xs bg-primary/10 text-primary px-2 py-1 rounded">JavaScript</span>
-                    <span className="text-xs bg-primary/10 text-primary px-2 py-1 rounded">HTML5</span>
-                    <span className="text-xs bg-primary/10 text-primary px-2 py-1 rounded">CSS3</span>
-                    <span className="text-xs bg-primary/10 text-primary px-2 py-1 rounded">Responsive Design</span>
-                  </div>
                 </div>
               </div>
             </div>
@@ -488,7 +510,24 @@ const Index = () => {
             <p className="section-subtitle">Professional credentials and recognitions</p>
           </div>
           
-          <div className="max-w-3xl mx-auto">
+          <div className="max-w-3xl mx-auto space-y-6">
+            <Card className="p-8 border border-white/5 bg-card/80 backdrop-blur-sm">
+              <div className="flex flex-col md:flex-row md:items-center gap-6">
+                <div className="flex-shrink-0">
+                  <div className="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center">
+                    <Briefcase className="text-primary" size={32} />
+                  </div>
+                </div>
+                <div className="flex-1">
+                  <h3 className="text-xl font-bold mb-2">MERN Stack Internship Certificate</h3>
+                  <p className="text-primary font-medium mb-2">Techolas Technologies</p>
+                  <p className="text-muted-foreground">
+                    Successfully completed a comprehensive MERN Stack internship covering full-stack web development with MongoDB, Express.js, React.js, and Node.js.
+                  </p>
+                </div>
+              </div>
+            </Card>
+
             <Card className="p-8 border border-white/5 bg-card/80 backdrop-blur-sm">
               <div className="flex flex-col md:flex-row md:items-center gap-6">
                 <div className="flex-shrink-0">
@@ -500,11 +539,7 @@ const Index = () => {
                   <h3 className="text-xl font-bold mb-2">AI Certification (STEM.org Accredited)</h3>
                   <p className="text-primary font-medium mb-2">Unique World Robotics</p>
                   <p className="text-muted-foreground">
-                    Completed comprehensive AI training program accredited by STEM.org, covering fundamental concepts 
-                    and practical applications of artificial intelligence.
-                  </p>
-                  <p className="text-sm text-muted-foreground mt-3">
-                    <span className="font-medium">Duration:</span> February 2025 - March 2025
+                    Completed comprehensive AI training program accredited by STEM.org, covering fundamental concepts and practical applications of artificial intelligence.
                   </p>
                 </div>
               </div>
@@ -532,10 +567,9 @@ const Index = () => {
               <div className="bg-primary/10 p-3 rounded-lg w-max mb-4">
                 <MonitorSmartphone className="text-primary" size={28} />
               </div>
-              <h3 className="text-xl font-bold mb-3">Full-stack Web Development</h3>
+              <h3 className="text-xl font-bold mb-3">Full Stack Web Development</h3>
               <p className="text-muted-foreground">
-                Complete web application development from frontend to backend, 
-                creating seamless user experiences with modern technologies.
+                End-to-end web application development using the MERN stack, delivering scalable and performant solutions.
               </p>
             </div>
             
@@ -544,46 +578,42 @@ const Index = () => {
               <div className="bg-primary/10 p-3 rounded-lg w-max mb-4">
                 <Code className="text-primary" size={28} />
               </div>
-              <h3 className="text-xl font-bold mb-3">Front-end Development</h3>
+              <h3 className="text-xl font-bold mb-3">Frontend Development</h3>
               <p className="text-muted-foreground">
-                Crafting responsive, accessible, and user-friendly interfaces 
-                using modern front-end technologies like React.js.
+                Crafting responsive, accessible, and pixel-perfect interfaces using React.js, Tailwind CSS, and modern frontend tools.
               </p>
             </div>
             
             {/* Service 3 */}
             <div className="service-card animate-fade-in" style={{ animationDelay: '0.3s' }}>
               <div className="bg-primary/10 p-3 rounded-lg w-max mb-4">
-                <Database className="text-primary" size={28} />
+                <Server className="text-primary" size={28} />
               </div>
-              <h3 className="text-xl font-bold mb-3">Back-end Development</h3>
+              <h3 className="text-xl font-bold mb-3">Backend Development</h3>
               <p className="text-muted-foreground">
-                Building robust server-side applications with Node.js, Express, 
-                Python Flask for reliable and scalable backends.
+                Building robust server-side applications with Node.js, Express.js, REST APIs, and secure authentication systems.
               </p>
             </div>
             
             {/* Service 4 */}
             <div className="service-card animate-fade-in" style={{ animationDelay: '0.4s' }}>
               <div className="bg-primary/10 p-3 rounded-lg w-max mb-4">
-                <ShoppingCart className="text-primary" size={28} />
+                <Briefcase className="text-primary" size={28} />
               </div>
-              <h3 className="text-xl font-bold mb-3">E-commerce Website Design</h3>
+              <h3 className="text-xl font-bold mb-3">Software Development</h3>
               <p className="text-muted-foreground">
-                Developing custom e-commerce solutions including Shopify stores 
-                with optimized user flows and payment integrations.
+                Developing custom software solutions with clean architecture, version control, and industry best practices.
               </p>
             </div>
             
             {/* Service 5 */}
             <div className="service-card animate-fade-in" style={{ animationDelay: '0.5s' }}>
               <div className="bg-primary/10 p-3 rounded-lg w-max mb-4">
-                <Database className="text-primary" size={28} />
+                <ShoppingCart className="text-primary" size={28} />
               </div>
-              <h3 className="text-xl font-bold mb-3">Database Management</h3>
+              <h3 className="text-xl font-bold mb-3">Shopify Development</h3>
               <p className="text-muted-foreground">
-                Designing, implementing, and optimizing database systems using 
-                MySQL, MongoDB, and other technologies for efficient data handling.
+                Building and customizing Shopify stores with optimized user flows, themes, and seamless e-commerce experiences.
               </p>
             </div>
             
@@ -592,10 +622,9 @@ const Index = () => {
               <div className="bg-primary/10 p-3 rounded-lg w-max mb-4">
                 <FileCode className="text-primary" size={28} />
               </div>
-              <h3 className="text-xl font-bold mb-3">Custom Web Solutions</h3>
+              <h3 className="text-xl font-bold mb-3">Custom Web Applications</h3>
               <p className="text-muted-foreground">
-                Building tailored web applications and tools to address specific 
-                business needs and challenges.
+                Building tailored web applications and tools to address specific business needs and challenges.
               </p>
             </div>
           </div>
@@ -699,4 +728,3 @@ const Index = () => {
     </>;
 };
 export default Index;
-
