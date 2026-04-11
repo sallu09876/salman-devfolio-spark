@@ -2,7 +2,7 @@
 
 ## Project info
 
-**URL**: https://lovable.dev/projects/2fa98c0a-f8e8-46c0-aa70-e529618993ce
+**URL**: https://lovable.dev/projects/3eec812e-fc76-4f91-924a-b578f87e1672
 
 ## How can I edit this code?
 
@@ -10,7 +10,7 @@ There are several ways of editing your application.
 
 **Use Lovable**
 
-Simply visit the [Lovable Project]([https://lovable.dev/projects/2fa98c0a-f8e8-46c0-aa70-e529618993ce](https://portfolio-peach-nine-94.vercel.app/)) and start prompting.
+Simply visit the [Lovable Project]([https://lovable.dev/projects/3eec812e-fc76-4f91-924a-b578f87e1672](https://portfolio-peach-nine-94.vercel.app/)) and start prompting.
 
 Changes made via Lovable will be committed automatically to this repo.
 
@@ -62,7 +62,7 @@ This project is built with:
 
 ## How can I deploy this project?
 
-Simply open [Lovable](https://lovable.dev/projects/2fa98c0a-f8e8-46c0-aa70-e529618993ce) and click on Share -> Publish.
+Simply open [Lovable](https://lovable.dev/projects/3eec812e-fc76-4f91-924a-b578f87e1672) and click on Share -> Publish.
 
 ## Can I connect a custom domain to my Lovable project?
 
