@@ -10,7 +10,7 @@ There are several ways of editing your application.
 
 **Use Lovable**
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/2fa98c0a-f8e8-46c0-aa70-e529618993ce) and start prompting.
+Simply visit the [Lovable Project]([https://lovable.dev/projects/2fa98c0a-f8e8-46c0-aa70-e529618993ce](https://portfolio-peach-nine-94.vercel.app/)) and start prompting.
 
 Changes made via Lovable will be committed automatically to this repo.
 
