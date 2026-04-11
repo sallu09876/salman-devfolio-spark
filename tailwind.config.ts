@@ -63,24 +63,10 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// Custom colors for our portfolio
-				'blue': {
-					50: '#e6f1fe',
-					100: '#cce3fd',
-					200: '#99c8fb',
-					300: '#66acf9',
-					400: '#3391f7',
-					500: '#0066cc',
-					600: '#0052a3',
-					700: '#003d7a',
-					800: '#002952',
-					900: '#001429',
-				},
 			},
 			fontFamily: {
-				'sans': ['Inter', 'ui-sans-serif', 'system-ui'],
-				'inter': ['Inter', 'ui-sans-serif', 'system-ui'],
-				'poppins': ['Poppins', 'sans-serif'],
+				'display': ['"Space Grotesk"', 'sans-serif'],
+				'body': ['"DM Sans"', 'sans-serif'],
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -100,20 +86,11 @@ export default {
 					'0%': { opacity: '0', transform: 'translateY(10px)' },
 					'100%': { opacity: '1', transform: 'translateY(0)' }
 				},
-				'fade-out': {
-					'0%': { opacity: '1', transform: 'translateY(0)' },
-					'100%': { opacity: '0', transform: 'translateY(10px)' }
-				},
-				'scale-in': {
-					'0%': { transform: 'scale(0.95)', opacity: '0' },
-					'100%': { transform: 'scale(1)', opacity: '1' }
-				},
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
 				'accordion-up': 'accordion-up 0.2s ease-out',
 				'fade-in': 'fade-in 0.5s ease-out',
-				'scale-in': 'scale-in 0.3s ease-out',
 			}
 		}
 	},
