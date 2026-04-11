@@ -469,8 +469,35 @@ const Index = () => {
               </div>
             </div>
             
-            {/* Project 4 - CloudWay */}
+            {/* Project 4 - FinSight */}
             <div className="project-card group animate-fade-in" style={{ animationDelay: '0.4s' }}>
+              <div className="relative overflow-hidden">
+                <div className="aspect-video bg-muted flex items-center justify-center">
+                  <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&auto=format&fit=crop" alt="FinSight – Finance Tracker" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+                </div>
+                
+                <div className="p-6">
+                  <h3 className="text-xl font-bold mb-2">FinSight – Finance Tracker</h3>
+                  <p className="text-muted-foreground mb-4">
+                    Developed a modern responsive React app to track finances through analytics, graphs, and insights with a proper dashboard interface.
+                  </p>
+                  
+                  <div className="flex flex-wrap gap-2 mb-4">
+                    <span className="text-xs bg-primary/10 text-primary px-2 py-1 rounded">React</span>
+                    <span className="text-xs bg-primary/10 text-primary px-2 py-1 rounded">Dashboard</span>
+                    <span className="text-xs bg-primary/10 text-primary px-2 py-1 rounded">Charts</span>
+                    <span className="text-xs bg-primary/10 text-primary px-2 py-1 rounded">Analytics</span>
+                  </div>
+                  
+                  <a href="https://finance-dashboard-ui-flame-theta.vercel.app/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-primary hover:underline">
+                    View Project →
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            {/* Project 5 - CloudWay */}
+            <div className="project-card group animate-fade-in" style={{ animationDelay: '0.5s' }}>
               <div className="relative overflow-hidden">
                 <div className="aspect-video bg-muted flex items-center justify-center">
                   <img src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=800&auto=format&fit=crop" alt="CloudWay – Trip Package Booking Website" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
