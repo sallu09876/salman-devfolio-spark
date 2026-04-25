@@ -20,8 +20,8 @@ import profilePhoto from '@/assets/profile-photo.jpg';
 const skills = {
   frontend: ['HTML', 'CSS', 'JavaScript', 'React.js', 'Redux', 'Bootstrap', 'Tailwind CSS', 'Mobile-First'],
   backend: ['Node.js', 'Express.js', 'REST APIs', 'JWT Auth', 'RBAC', 'Validation', 'Security Headers'],
-  databases: ['MongoDB', 'Mongoose ODM', 'MySQL', 'Schema Design', 'Transactions', 'Indexing'],
-  tools: ['Git', 'GitHub', 'VS Code', 'Docker', 'Docker Compose', 'MVC', 'HTTP-only Cookies', 'Thunder Client'],
+  databases: ['MongoDB', 'Mongoose ODM', 'MySQL', 'PostgreSQL', 'pg (node-postgres)', 'Connection Pooling', 'Schema Design', 'Transactions', 'Indexing'],
+  tools: ['VS Code', 'Thunder Client', 'Git', 'GitHub', 'Docker & Docker Compose', 'Vercel', 'Render', 'MVC Architecture', 'API Integration', 'HTTP-only Cookies', 'CI/CD Deployment Workflows'],
 };
 
 const projects = [
@@ -138,7 +138,7 @@ const Index = () => {
 
               <ScrollReveal delay={0.2}>
                 <p className="text-lg text-muted-foreground max-w-lg leading-relaxed">
-                  Full Stack Developer specializing in the MERN stack — building scalable web applications, REST APIs, and responsive user interfaces.
+                  Software Developer specializing in the MERN stack — architecting and shipping production-ready applications across SaaS, B2B platforms, healthcare systems, e-commerce, and service-based websites.
                 </p>
               </ScrollReveal>
 
@@ -200,7 +200,7 @@ const Index = () => {
             <div className="space-y-6">
               <ScrollReveal delay={0.1}>
                 <p className="text-muted-foreground leading-relaxed">
-                  I am a Full Stack Developer specializing in the MERN stack (MongoDB, Express.js, React.js, Node.js) with hands-on experience building modern web applications from frontend interfaces to backend services.
+                  I am a Software Developer specializing in the MERN stack (MongoDB, Express.js, React.js, Node.js) with hands-on experience architecting and shipping production-ready applications from responsive frontends to scalable backend systems.
                 </p>
               </ScrollReveal>
               <ScrollReveal delay={0.15}>
@@ -272,15 +272,14 @@ const Index = () => {
                 location: 'Calicut',
                 period: 'Feb 2026 – Present',
                 current: true,
-                desc: 'Contributing to a Customer Engagement Platform, building backend services and scalable architecture.',
+                desc: 'Leading end-to-end development of a full-stack B2B SaaS platform across React, Node.js, and PostgreSQL.',
                 responsibilities: [
-                  'Working on a Customer Engagement Platform',
-                  'Contributing to backend services and scalable architecture',
-                  'Writing BRD analysis and SRS documentation',
-                  'Designing MongoDB schemas and backend logic',
-                  'Collaborating with cross-functional teams',
+                  'Developing a full-stack B2B SaaS platform independently, managing end-to-end development across React, Node.js, and PostgreSQL',
+                  'Engineered production-grade REST APIs with MVC architecture, JWT auth, and migrated database from MongoDB to PostgreSQL for stronger data integrity',
+                  'Built a real-time React dashboard with revenue metrics, lead pipeline, and team monitoring driving enterprise-level decision-making',
+                  'Led full technical execution solo — from BRD/SRS to a scalable, multi-module B2B platform ready for production',
                 ],
-                tags: ['Node.js', 'Express.js', 'MongoDB', 'REST APIs'],
+                tags: ['Node.js', 'Express.js', 'PostgreSQL', 'React.js', 'REST APIs', 'JWT', 'MVC'],
               },
               {
                 role: 'MERN Stack Intern',
@@ -289,14 +288,14 @@ const Index = () => {
                 location: 'Calicut',
                 period: 'Jun 2025 – Feb 2026',
                 current: false,
-                desc: 'Developed responsive React.js interfaces, integrated REST APIs, and implemented MongoDB CRUD operations.',
+                desc: 'Engineered responsive frontends and production-ready REST APIs across MongoDB and PostgreSQL stacks.',
                 responsibilities: [
-                  'Developed responsive React.js user interfaces',
-                  'Integrated REST APIs using Node.js and Express.js',
-                  'Implemented MongoDB CRUD operations',
-                  'Practiced debugging, version control, and dev workflows',
+                  'Engineered responsive, high-performance web interfaces using React.js with modern JavaScript (ES6+) and Tailwind CSS',
+                  'Designed and deployed production-ready RESTful APIs using Node.js and Express.js with MVC architecture and JWT-based security',
+                  'Architected and migrated database layers across MongoDB and PostgreSQL, implementing schema design, CRUD operations, and connection pooling',
+                  'Drove end-to-end development independently — from debugging complex systems to managing full version control workflows in a real production environment',
                 ],
-                tags: ['React.js', 'Node.js', 'Express.js', 'MongoDB'],
+                tags: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'PostgreSQL', 'JWT'],
               },
             ].map((exp, i) => (
               <ScrollReveal key={exp.company} delay={i * 0.15}>
