@@ -177,7 +177,7 @@ const Index = () => {
             <ScrollReveal className="w-full lg:w-2/5 flex justify-center" delay={0.2} direction="right">
               <div className="relative">
                 <div className="w-64 h-64 md:w-80 md:h-80 rounded-3xl overflow-hidden glass glow-border">
-                  <img src={profilePhoto} alt="Salman Rasheed" className="w-full h-full object-cover" />
+                  <img src={profilePhoto} alt="Salman Rasheed" className="w-full h-full object-cover" loading="eager" fetchPriority="high" decoding="async" width={320} height={320} />
                 </div>
                 <div className="absolute -z-10 inset-0 bg-primary/20 rounded-3xl blur-3xl" />
               </div>
@@ -356,6 +356,8 @@ const Index = () => {
                         src={project.image}
                         alt={project.title}
                         className="w-full h-full object-cover"
+                        loading="lazy"
+                        decoding="async"
                         whileHover={{ scale: 1.05 }}
                         transition={{ duration: 0.6, ease: [0.25, 0.4, 0.25, 1] }}
                       />
