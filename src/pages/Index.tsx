@@ -500,25 +500,27 @@ const Index = () => {
       </section>
 
       {/* Scroll to top */}
-      <motion.button
-        onClick={() => {
-          const top = document.getElementById('home');
-          if (top) top.scrollIntoView({ behavior: 'smooth' });
-          else window.scrollTo({ top: 0, behavior: 'smooth' });
-        }}
-        className="fixed bottom-6 right-6 sm:bottom-8 sm:right-8 w-12 h-12 rounded-full glass glow-border flex items-center justify-center text-foreground hover:text-primary hover:scale-110 z-50 transition-all duration-300 shadow-lg shadow-black/40 backdrop-blur-xl"
-        initial={{ opacity: 0, scale: 0.8, y: 10 }}
-        animate={{
-          opacity: showScrollTop ? 1 : 0,
-          scale: showScrollTop ? 1 : 0.8,
-          y: showScrollTop ? 0 : 10,
-        }}
-        transition={{ duration: 0.25, ease: [0.25, 0.4, 0.25, 1] }}
-        style={{ pointerEvents: showScrollTop ? 'auto' : 'none' }}
-        aria-label="Scroll to top"
-      >
-        <ArrowUp size={16} />
-      </motion.button>
+      <div className="fixed left-1/2 bottom-5 z-50 -translate-x-1/2 md:left-auto md:bottom-auto md:right-5 md:top-1/2 md:translate-x-0 md:-translate-y-1/2">
+        <motion.button
+          onClick={() => {
+            const top = document.getElementById('home');
+            if (top) top.scrollIntoView({ behavior: 'smooth' });
+            else window.scrollTo({ top: 0, behavior: 'smooth' });
+          }}
+          className="w-11 h-11 md:w-12 md:h-12 rounded-full glass glow-border flex items-center justify-center text-foreground hover:text-primary hover:scale-110 transition-all duration-300 shadow-lg shadow-black/40 backdrop-blur-xl"
+          initial={{ opacity: 0, scale: 0.8, y: 10 }}
+          animate={{
+            opacity: showScrollTop ? 1 : 0,
+            scale: showScrollTop ? 1 : 0.8,
+            y: showScrollTop ? 0 : 10,
+          }}
+          transition={{ duration: 0.25, ease: [0.25, 0.4, 0.25, 1] }}
+          style={{ pointerEvents: showScrollTop ? 'auto' : 'none' }}
+          aria-label="Scroll to top"
+        >
+          <ArrowUp size={16} />
+        </motion.button>
+      </div>
 
       <Footer />
     </>
