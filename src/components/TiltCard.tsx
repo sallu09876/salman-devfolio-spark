@@ -1,5 +1,5 @@
-import { useRef, useState, ReactNode } from 'react';
-import { motion } from 'framer-motion';
+import { useRef, ReactNode } from 'react';
+import { motion, useMotionValue, useSpring, useReducedMotion, useTransform } from 'framer-motion';
 
 interface TiltCardProps {
   children: ReactNode;
@@ -8,23 +8,29 @@ interface TiltCardProps {
 
 const TiltCard = ({ children, className = '' }: TiltCardProps) => {
   const ref = useRef<HTMLDivElement>(null);
-  const [rotateX, setRotateX] = useState(0);
-  const [rotateY, setRotateY] = useState(0);
+  const reduceMotion = useReducedMotion();
+
+  const x = useMotionValue(0);
+  const y = useMotionValue(0);
+
+  const spring = { stiffness: 250, damping: 25, mass: 0.4 };
+  const rotateX = useSpring(useTransform(y, [-0.5, 0.5], [5, -5]), spring);
+  const rotateY = useSpring(useTransform(x, [-0.5, 0.5], [-5, 5]), spring);
+
+  if (reduceMotion) {
+    return <div className={className}>{children}</div>;
+  }
 
   const handleMouseMove = (e: React.MouseEvent) => {
     if (!ref.current) return;
     const rect = ref.current.getBoundingClientRect();
-    const centerX = rect.left + rect.width / 2;
-    const centerY = rect.top + rect.height / 2;
-    const x = (e.clientX - centerX) / (rect.width / 2);
-    const y = (e.clientY - centerY) / (rect.height / 2);
-    setRotateX(-y * 5);
-    setRotateY(x * 5);
+    x.set((e.clientX - rect.left) / rect.width - 0.5);
+    y.set((e.clientY - rect.top) / rect.height - 0.5);
   };
 
   const handleMouseLeave = () => {
-    setRotateX(0);
-    setRotateY(0);
+    x.set(0);
+    y.set(0);
   };
 
   return (
@@ -34,11 +40,12 @@ const TiltCard = ({ children, className = '' }: TiltCardProps) => {
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
       style={{
+        rotateX,
+        rotateY,
         transformStyle: 'preserve-3d',
-        perspective: 1000,
+        transformPerspective: 1000,
+        willChange: 'transform',
       }}
-      animate={{ rotateX, rotateY }}
-      transition={{ type: 'spring', stiffness: 300, damping: 30 }}
     >
       {children}
     </motion.div>
