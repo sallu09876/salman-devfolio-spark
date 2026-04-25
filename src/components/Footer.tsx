@@ -13,7 +13,7 @@ const Footer = () => {
               SR<span className="text-primary">.</span>
             </a>
             <p className="text-muted-foreground text-sm mt-3 max-w-sm">
-              Full-Stack Developer building robust, scalable web applications with the MERN stack.
+              Software Developer architecting production-ready web applications across the full stack.
             </p>
           </div>
           
