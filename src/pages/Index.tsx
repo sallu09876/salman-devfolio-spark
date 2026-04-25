@@ -501,11 +501,20 @@ const Index = () => {
 
       {/* Scroll to top */}
       <motion.button
-        onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-        className="fixed bottom-8 right-8 w-10 h-10 rounded-full glass glow-border flex items-center justify-center text-foreground hover:text-primary z-50 transition-colors"
-        initial={{ opacity: 0, scale: 0.8 }}
-        animate={{ opacity: showScrollTop ? 1 : 0, scale: showScrollTop ? 1 : 0.8 }}
-        transition={{ duration: 0.2 }}
+        onClick={() => {
+          const top = document.getElementById('home');
+          if (top) top.scrollIntoView({ behavior: 'smooth' });
+          else window.scrollTo({ top: 0, behavior: 'smooth' });
+        }}
+        className="fixed bottom-6 right-6 md:bottom-8 md:right-8 w-11 h-11 rounded-full glass glow-border flex items-center justify-center text-foreground hover:text-primary hover:scale-110 z-50 transition-all duration-300"
+        initial={{ opacity: 0, scale: 0.8, y: 10 }}
+        animate={{
+          opacity: showScrollTop ? 1 : 0,
+          scale: showScrollTop ? 1 : 0.8,
+          y: showScrollTop ? 0 : 10,
+        }}
+        transition={{ duration: 0.25, ease: [0.25, 0.4, 0.25, 1] }}
+        style={{ pointerEvents: showScrollTop ? 'auto' : 'none' }}
         aria-label="Scroll to top"
       >
         <ArrowUp size={16} />
