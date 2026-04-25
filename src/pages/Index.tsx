@@ -506,7 +506,7 @@ const Index = () => {
           if (top) top.scrollIntoView({ behavior: 'smooth' });
           else window.scrollTo({ top: 0, behavior: 'smooth' });
         }}
-        className="fixed bottom-6 right-6 md:bottom-8 md:right-8 w-11 h-11 rounded-full glass glow-border flex items-center justify-center text-foreground hover:text-primary hover:scale-110 z-50 transition-all duration-300"
+        className="fixed w-12 h-12 rounded-full glass glow-border flex items-center justify-center text-foreground hover:text-primary hover:scale-110 z-50 transition-all duration-300 shadow-lg shadow-black/30 backdrop-blur-xl"
         initial={{ opacity: 0, scale: 0.8, y: 10 }}
         animate={{
           opacity: showScrollTop ? 1 : 0,
@@ -514,7 +514,11 @@ const Index = () => {
           y: showScrollTop ? 0 : 10,
         }}
         transition={{ duration: 0.25, ease: [0.25, 0.4, 0.25, 1] }}
-        style={{ pointerEvents: showScrollTop ? 'auto' : 'none' }}
+        style={{
+          pointerEvents: showScrollTop ? 'auto' : 'none',
+          right: 'max(1.25rem, env(safe-area-inset-right))',
+          bottom: 'max(1.25rem, env(safe-area-inset-bottom))',
+        }}
         aria-label="Scroll to top"
       >
         <ArrowUp size={16} />
